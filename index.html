@@ -1088,7 +1088,7 @@ function modes() {
 function roomEntry() {
   return '<section class="shell"><div class="lobby">' + title("Play Online", "modes") +
     '<div class="panel room-panel room-entry"><h2>Three chefs per room</h2>' +
-    '<label>Chef name<input id="chef-name" maxlength="16" autocomplete="nickname" placeholder="Your chef name" value="' + e(playerName) + '"></label>' +
+    '<label>Chef name<input id="chef-name" maxlength="16" autocomplete="nickname" placeholder="Your name" value="' + e(playerName) + '"></label>' +
     '<div class="split"><section class="stack"><h3>Host a game</h3>' +
     button("Create Room", "create", undefined, "primary") +
     '</section><section><form id="join-form"><h3>Join a game</h3><label>Room code<input name="code" maxlength="7" autocomplete="off" autocapitalize="characters" placeholder="7-character code" value="' + e(roomNumber) + '" required></label><button class="secondary" type="submit" form="join-form">Join Room</button></form></section></div>' +
